@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comercio de Relojes</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: url('https://example.com/imagen-reloj.jpg'); /* Reemplaza con la URL de tu imagen */
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+    }
+  </style>
+  <script>
+    // Función para mostrar mensaje de confirmación al comprar
+    function confirmarCompra(producto) {
+      alert("Has agregado " + producto + " a tu carrito de compras.");
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Relojes Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección Principal / Hero -->
+  <div class="hero">
+    <div>
+      <h1>¡Descubre los Mejores Relojes!</h1>
+      <p class="lead">Encuentra una colección exclusiva de relojes modernos y clásicos para cada estilo.</p>
+      <!-- Redirección a otra página al hacer clic -->
+      <a href="https://tutienda-relojes.com/productos" class="btn btn-success btn-lg">Ver Productos</a>
+    </div>
+  </div>
+
+  <!-- Sección de Productos -->
+  <section id="productos" class="container py-5">
+    <h2 class="text-center mb-5">Nuestros Relojes</h2>
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc8ho3OIKYk_Gs7HkU952CbB_bW2hlj1CKbA&s" class="card-img-top" alt="Reloj Clásico">
+          <div class="card-body">
+            <h5 class="card-title">Reloj Clásico de pared</h5>
+            <p class="card-text">Un reloj de estilo clásico con correa de cuero, ideal para el día a día.</p>
+            <p class="card-text"><strong>$199.99</strong></p>
+            <button onclick="confirmarCompra('Reloj Clásico')" class="btn btn-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Reloj Deportivo">
+          <div class="card-body">
+            <h5 class="card-title">Botas militares</h5>
+            <p class="card-text">Un reloj resistente al agua, perfecto para deportistas y aventureros.</p>
+            <p class="card-text"><strong>$249.99</strong></p>
+            <button onclick="confirmarCompra('Reloj Deportivo')" class="btn btn-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Producto 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgx9Pcib3P4_sN7hU269OxgpfqgLhTfFceLg&s" class="card-img-top" alt="Reloj Inteligente">
+          <div class="card-body">
+            <h5 class="card-title">Reloj Inteligente</h5>
+            <p class="card-text">Un reloj con tecnología avanzada para mantenerte conectado todo el día.</p>
+            <p class="card-text"><strong>$299.99</strong></p>
+            <button onclick="confirmarCompra('Reloj Inteligente')" class="btn btn-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Contacto</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Tu email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Relojes Shop. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
